@@ -1,0 +1,34 @@
+
+
+@keyframes zoom {
+  0% {
+    transform: scale(1.25);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.font-logo {
+  font-family: 'Logo';
+}
+
+.font-time {
+  font-family: 'Time';
+}
+
+.font-Pacifico {
+  font-family: 'Pacifico-Regular';
+}
+
+.font-glitch {
+  font-family: 'Glitch';
+}
+
+.font-title {
+  font-family: 'Title';
+}
+
+.font-content {
+  font-family: 'HarmonyOS_Regular';
+}

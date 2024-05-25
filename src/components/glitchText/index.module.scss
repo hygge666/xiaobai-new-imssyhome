@@ -1,0 +1,258 @@
+
+.glitch {
+  position: relative;
+  color: #fff;
+  mix-blend-mode: lighten;
+  font-family: 'Glitch', sans-serif;
+  font-size: 80px;
+  text-transform: uppercase;
+}
+
+.glitch:before,
+.glitch:after {
+  content: attr(data-text);
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0);
+  clip: rect(0, 0, 0, 0)
+}
+
+.glitch:before {
+  left: -1px;
+  text-shadow: 1px 0 #ff3f1a
+}
+
+.glitch:after {
+  left: 1px;
+  text-shadow: -1px 0 #00a7e0
+}
+
+.glitch:hover:before {
+  text-shadow: 4px 0 #ff3f1a;
+  animation: glitch-loop-1 .8s infinite ease-in-out alternate-reverse
+}
+
+.glitch:hover:after {
+  text-shadow: -5px 0 #00a7e0;
+  animation: glitch-loop-2 .8s infinite ease-in-out alternate-reverse
+}
+
+@-webkit-keyframes glitch-loop-1 {
+  0% {
+    clip: rect(36px, 9999px, 9px, 0)
+  }
+
+  25% {
+    clip: rect(25px, 9999px, 99px, 0)
+  }
+
+  50% {
+    clip: rect(50px, 9999px, 102px, 0)
+  }
+
+  75% {
+    clip: rect(30px, 9999px, 92px, 0)
+  }
+
+  100% {
+    clip: rect(91px, 9999px, 98px, 0)
+  }
+}
+
+@keyframes glitch-loop-1 {
+  0% {
+    clip: rect(36px, 9999px, 9px, 0)
+  }
+
+  25% {
+    clip: rect(25px, 9999px, 99px, 0)
+  }
+
+  50% {
+    clip: rect(50px, 9999px, 102px, 0)
+  }
+
+  75% {
+    clip: rect(30px, 9999px, 92px, 0)
+  }
+
+  100% {
+    clip: rect(91px, 9999px, 98px, 0)
+  }
+}
+
+@-webkit-keyframes glitch-loop-2 {
+  0% {
+    top: -1px;
+    left: 1px;
+    clip: rect(65px, 9999px, 119px, 0)
+  }
+
+  25% {
+    top: -6px;
+    left: 4px;
+    clip: rect(79px, 9999px, 19px, 0)
+  }
+
+  50% {
+    top: -3px;
+    left: 2px;
+    clip: rect(68px, 9999px, 11px, 0)
+  }
+
+  75% {
+    top: 0;
+    left: -4px;
+    clip: rect(95px, 9999px, 53px, 0)
+  }
+
+  100% {
+    top: -1px;
+    left: -1px;
+    clip: rect(31px, 9999px, 149px, 0)
+  }
+}
+
+@keyframes glitch-loop-2 {
+  0% {
+    top: -1px;
+    left: 1px;
+    clip: rect(65px, 9999px, 119px, 0)
+  }
+
+  25% {
+    top: -6px;
+    left: 4px;
+    clip: rect(79px, 9999px, 19px, 0)
+  }
+
+  50% {
+    top: -3px;
+    left: 2px;
+    clip: rect(68px, 9999px, 11px, 0)
+  }
+
+  75% {
+    top: 0;
+    left: -4px;
+    clip: rect(95px, 9999px, 53px, 0)
+  }
+
+  100% {
+    top: -1px;
+    left: -1px;
+    clip: rect(31px, 9999px, 149px, 0)
+  }
+}
+
+
+// 自动播放故障文字 =======================================
+.title {
+  filter: blur(10px);
+  letter-spacing: -3rem;
+  color: white;
+  font-size: 3.75rem;
+  font-weight: 800;
+  line-height: 1;
+  -webkit-text-stroke: 1px black;
+  text-transform: uppercase;
+  // animation:
+  // glitch 1s 0.5s linear infinite,
+  // expand 1s forwards;
+  animation: expand 1s forwards;
+  font-family: 'Glitch', sans-serif;
+
+  &:hover {
+    animation: glitch 1s 0.5s linear infinite, expand 1s forwards;
+  }
+
+  &:hover:before {
+    animation: glitchTop 1s 0.5s linear infinite;
+    clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+  }
+
+   &:hover:after {
+    animation: glitchBotom 1.5s 0.5s linear infinite;
+    clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+  }
+}
+
+
+.title:before,
+.title:after {
+  content: attr(data-text);
+  position: absolute;
+  left: 0;
+  font-family: 'Glitch', sans-serif;
+}
+
+// .title:before {
+//   animation: glitchTop 1s 0.5s linear infinite;
+//   clip-path: polygon(0 0, 100% 0, 100% 33%, 0 33%);
+// }
+
+// .title:after {
+//   animation: glitchBotom 1.5s 0.5s linear infinite;
+//   clip-path: polygon(0 67%, 100% 67%, 100% 100%, 0 100%);
+// }
+
+@keyframes expand {
+  to {
+    letter-spacing: 0.4rem;
+    filter: blur(0px);
+  }
+}
+
+@keyframes glitch {
+
+  2%,
+  64% {
+    transform: translate(2px, 0) skew(0deg);
+  }
+
+  4%,
+  60% {
+    transform: translate(-2px, 0) skew(0deg);
+  }
+
+  62% {
+    transform: translate(0, 0) skew(5deg);
+  }
+}
+
+@keyframes glitchTop {
+
+  2%,
+  64% {
+    transform: translate(2px, -2px);
+  }
+
+  4%,
+  60% {
+    transform: translate(-2px, 2px);
+  }
+
+  62% {
+    transform: translate(13px, -1px) skew(-13deg);
+  }
+}
+
+@keyframes glitchBotom {
+
+  2%,
+  64% {
+    transform: translate(-2px, 0);
+  }
+
+  4%,
+  60% {
+    transform: translate(-2px, 0);
+  }
+
+  62% {
+    transform: translate(-22px, 5px) skew(21deg);
+  }
+}
+
+
