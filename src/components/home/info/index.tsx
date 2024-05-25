@@ -23,8 +23,8 @@ export default defineComponent({
     const socialList = ref<Social[]>([
       { id: 'github', path: 'https://github.com/hygge666', icon: 'mdi:github', tip: '去GitHub看看~' },
       { id: 'qq', path: 'https://res.abeim.cn/api/qq/?qq=1691617546', icon: 'basil:qq-solid', tip: '一起玩局游戏吧' },
-      { id: 'wechat', path: 'src/assets/img/wxcode.png', icon: 'ic:baseline-wechat', type: 'pop', tip: '有什么事吗' },
-      { id: 'wechat-public', path: 'src/assets/img/gzhcode.jpg', icon: 'mingcute:wechat-miniprogram-fill', type: 'pop', tip: '关注一波走起~' },
+      { id: 'wechat', path: 'https://i.ibb.co/G0LK211/IMG-202405264432-746x1018.png', icon: 'ic:baseline-wechat', type: 'pop', tip: '有什么事吗' },
+      { id: 'wechat-public', path: 'https://i.ibb.co/h2bt0nd/640.jpg', icon: 'mingcute:wechat-miniprogram-fill', type: 'pop', tip: '关注一波走起~' },
       { id: 'email', path: 'mailto:1691617546@qq.com', icon: 'ic:round-email', tip: '来一封Email~' },
       { id: 'juejin', path: 'https://juejin.cn/', icon: 'tabler:brand-juejin', tip: '前排围观一下~' },
     ])
@@ -86,7 +86,7 @@ export default defineComponent({
             </svg>
           </div>
           <div class="font-Pacifico pl-8">Hello World</div>
-          <div class="text-5xl font-title ml-[-1rem] mt-4 pl-8">不念过往逐梦向前.</div>
+          <div class="text-5xl font-title ml-[-1rem] mt-4 pl-8">己所不欲勿施于人.</div>
           <div class="w-full flex justify-end">
             <div class="text-xs w-4 h-4 relative right-0 mt-2">
               <svg data-v-03d4b6aa="" xmlns="http://www.w3.org/2000/svg" xmlnsXlink={'http://www.w3.org/1999/xlink'}
