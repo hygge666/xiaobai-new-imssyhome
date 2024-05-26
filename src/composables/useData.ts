@@ -23,6 +23,9 @@ export const useData = () => {
     // { name: 'create-kd', href: 'https://create-keep-design.dshuais.com/', icon: 'k' },
     { name: '今日热榜', href: 'https://hot.hylove.top/', icon: 'https://files.dshuais.com/images/logo/k.png', iconType: 'img' },
     { name: '站点监控', href: 'https://status.hylove.top/', icon: 'https://files.dshuais.com/images/logo/dm.png', iconType: 'img' },
+    { name: '云盘', href: 'http://lixinyuanqi.ysepan.com/', icon: 'fa6-solid:cloud' },
+    { "name": "AI导航", "href": "http://ai.hylove.top/", "icon": "fa6-solid:paper-plane" }
+  ])
   ])
 
   return {
