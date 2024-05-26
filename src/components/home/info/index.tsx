@@ -1,7 +1,9 @@
 
 /*
-* @Author: xiaobai* @Date: 2024-02-29 15:58:16
- * @LastEditors: xiaobai * @LastEditTime: 2024-03-11 16:06:14
+* @Author: dushuai
+* @Date: 2024-02-29 15:58:16
+ * @LastEditors: dushuai
+ * @LastEditTime: 2024-03-11 16:06:14
 * @description: HomeInfo
 */
 
@@ -23,8 +25,8 @@ export default defineComponent({
     const socialList = ref<Social[]>([
       { id: 'github', path: 'https://github.com/hygge666', icon: 'mdi:github', tip: '去GitHub看看~' },
       { id: 'qq', path: 'https://res.abeim.cn/api/qq/?qq=1691617546', icon: 'basil:qq-solid', tip: '一起玩局游戏吧' },
-      { id: 'wechat', path: 'https://i.ibb.co/G0LK211/IMG-202405264432-746x1018.png', icon: 'ic:baseline-wechat', type: 'pop', tip: '有什么事吗' },
-      { id: 'wechat-public', path: 'https://i.ibb.co/h2bt0nd/640.jpg', icon: 'mingcute:wechat-miniprogram-fill', type: 'pop', tip: '关注一波走起~' },
+      { id: 'wechat', path: 'https://img02.anheyu.com/apiuser/156/2024/05/26/6652e691563b9.png', icon: 'ic:baseline-wechat', type: 'pop', tip: '有什么事吗' },
+      { id: 'wechat-public', path: 'https://img02.anheyu.com/apiuser/156/2024/05/26/6652e69155086.jpg', icon: 'mingcute:wechat-miniprogram-fill', type: 'pop', tip: '关注一波走起~' },
       { id: 'email', path: 'mailto:1691617546@qq.com', icon: 'ic:round-email', tip: '来一封Email~' },
       { id: 'juejin', path: 'https://juejin.cn/', icon: 'tabler:brand-juejin', tip: '前排围观一下~' },
     ])
